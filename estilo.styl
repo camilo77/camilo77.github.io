@@ -1,4 +1,38 @@
-rojo = #37B821
+tamano-cabeza-pagina = 70px
+color-cabeza-pagina = black
+
+tamano-biografia = 400px
+color-biografia = blue
+
+*
+    margin 0
+    padding 0
+body
+    text-align center
+.cabeza-pagina
+    position fixed
+    top 0
+    height tamano-cabeza-pagina
+    width 100%
+    background color-cabeza-pagina 
+    padding 10px
+    z-index 1
+    text-color white
+.biografia
+    position fixed
+    top 0px
+    height tamano-biografia
+    width 100%
+    background color-biografia
+    padding-top 80px
+    z-index -1
+section
+    z-index 0
+    position absolute
+    top tamano-biografia
+    background white
+    width 100%
+/*rojo = #37B821
 colorTitulo = #FFFFFF
 colorFondo = #FFFFFF
 colorNavegador = #484A40
@@ -22,7 +56,8 @@ body
 
 .fondo-principal
     position fixed
-    top -10px
+    top 0px
+    left 0px
     z-index -1
     width 100%
 
@@ -33,15 +68,15 @@ navegadores(propiedad, argumentos)
     {propiedad} argumentos
 
 .contenedor
-    border 	2px
+    border  2px
     .contenedor1
-    	background rojo 
+        background rojo 
 
 border-radiu()
-	-webkit-border-radius arguments
-	-moz-border-radius arguments
-	border-radius arguments
+    -webkit-border-radius arguments
+    -moz-border-radius arguments
+    border-radius arguments
 
 a.button
-	border-radiu 5px
-
+    border-radiu 5px
+*/
