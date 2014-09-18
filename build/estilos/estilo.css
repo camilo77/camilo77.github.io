@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  text-align: center;
+}
+.cabeza-pagina {
+  position: fixed;
+  top: 0;
+  height: 60px;
+  width: 100%;
+  background: rgba(0,21,24,0.9);
+  padding: 10px;
+  z-index: 1;
+  border-bottom: 1px solid #000;
+  color: #fff;
+  -webkit-box-shadow: 0px 7px 10px 0px rgba(0,0,0,0.49);
+  -moz-box-shadow: 0px 7px 10px 0px rgba(0,0,0,0.49);
+  box-shadow: 0px 7px 10px 0px rgba(0,0,0,0.49);
+}
+.cabeza-pagina .container-fluid {
+  text-align: right;
+}
+.cabeza-pagina .foto {
+  height: 45px;
+  width: 45px;
+  background: url("perfil.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+}
+.biografia {
+  position: fixed;
+  top: 0px;
+  height: 500px;
+  width: 100%;
+  background: #004048;
+  padding-top: 60px;
+  z-index: -1;
+  color: #fff;
+}
+.biografia .contenido-biografia {
+  width: 1000px;
+  margin: auto;
+  margin-top: 30px;
+/*hijos div directos(primera generacion)*/
+}
+.biografia .contenido-biografia>div {
+  padding: 10px;
+/*div con foto y nombre*/
+/*selecion del segundo div(contiene texto biografia)*/
+}
+.biografia .contenido-biografia>div:nth-child(1) {
+  padding-top: 20px;
+}
+.biografia .contenido-biografia>div:nth-child(1) .foto-biografia {
+  height: 200px;
+  width: 200px;
+  margin: auto;
+  background: url("perfil.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 30px #000;
+  -moz-box-shadow: 0 0 30px #000;
+  box-shadow: 0 0 30px #000;
+}
+.biografia .contenido-biografia>div:nth-child(2) {
+  padding: 40px;
+  height: 300px;
+  background: rgba(0,21,24,0.9);
+  overflow: auto;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 30px rgba(0,0,0,0.7);
+  -moz-box-shadow: 0 0 30px rgba(0,0,0,0.7);
+  box-shadow: 0 0 30px rgba(0,0,0,0.7);
+}
+section {
+  z-index: 0;
+  position: absolute;
+  top: 500px;
+  background: #fff;
+  width: 100%;
+  -webkit-box-shadow: 0px -5px 10px 0px rgba(0,0,0,0.49);
+  -moz-box-shadow: 0px -5px 10px 0px rgba(0,0,0,0.49);
+  box-shadow: 0px -5px 10px 0px rgba(0,0,0,0.49);
+}
+/*rojo = #37B821
+colorTitulo = #FFFFFF
+colorFondo = #FFFFFF
+colorNavegador = #484A40
+
+h1.titulo
+    top 100px
+    color colorTitulo
+
+body
+    background colorFondo
+    padding 0px
+    margin 0px
+
+.navegador
+    background colorNavegador
+    height 80px
+    width 100%
+    opacity 0.8
+    position fixed
+    top 0px
+
+.fondo-principal
+    position fixed
+    top 0px
+    left 0px
+    z-index -1
+    width 100%
+
+
+navegadores(propiedad, argumentos)
+    -webkit-{propiedad} argumentos
+    -moz-{propiedad} argumentos
+    {propiedad} argumentos
+
+.contenedor
+    border  2px
+    .contenedor1
+        background rojo 
+
+border-radiu()
+    -webkit-border-radius arguments
+    -moz-border-radius arguments
+    border-radius arguments
+
+a.button
+    border-radiu 5px
+*/

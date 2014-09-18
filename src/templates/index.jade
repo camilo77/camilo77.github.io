@@ -3,22 +3,23 @@ html(lang='es')
 	head
 		title Sebastian Pineda
 		meta( charset='utf-8')
-		link(rel='stylesheet', href='estilo.css')
-		link(rel='stylesheet', href='bootstrap/css/bootstrap.min.css')
-		link(rel='stylesheet', href='bootstrap/css/bootstrap.css')
+		link(rel='stylesheet', href='build/estilos/estilo.css')
+		link(rel='stylesheet', href='build/estilos/bootstrap/css/bootstrap.min.css')
+		link(rel='stylesheet', href='build/estilos/bootstrap/css/bootstrap.css')
 	body
 		header
-			
 			div.cabeza-pagina.container-fluid
 				div.row
 					div.nav.col-md-6
 						a 
 							h4 inicio
 					div.perfil.col-md-6
-						div.nombre 
-							h4 Sebastian Pineda
-						div.foto
-							img.foto-cabeza(src='')
+						.container-fluid
+							.row
+								div.nombre.col-md-6 
+									h4 Sebastian Pineda
+								div.caja-foto.col-md-6
+									div.foto
 			
 			div.biografia.container-fluid
 				div.titulo-biografia.row
@@ -26,13 +27,12 @@ html(lang='es')
 				div.contenido-biografia.row
 					div.foto-nombre.col-md-6
 						div.foto-biografia
-							img.foto-biografia(src='')
 						div.nombre-biografia
 							h1 Sebastian Pineda
 					div.datos-biografia.col-md-6
 						p.
 							Hola!!..Yo soy Sebastian Camilo Pineda Chavez, 
-							Colombiano nacido en la ciudad de bogotá el 11 
+							Colombiano de la ciudad de bogotá, nacido el 11 
 							de junio de 1993. Actualmente me encuentro 
 							cursando 7mo semestre de ingeniería de sistemas
 							en la Universidad Distrital Francisco José de 
@@ -45,7 +45,7 @@ html(lang='es')
 							mi primera elección, pues primero pensé en
 							matemáticas y arquitectura. Afortunadamente las
 							cosas no se dieron para estudiar estas y mi
-							tercera elección fue la Ingeniería.
+							tercera elección fue la Ingeniería (la mejor).
 						p.
 							
 		section
