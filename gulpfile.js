@@ -1,8 +1,5 @@
 var gulp = require('gulp');
 
-gulp.task('default', function(){
-
-});
 
 
 /*compilar jade a html*/
@@ -19,6 +16,7 @@ gulp.task('templates', function(){
 
 /*compilar styl a css*/
 var stylus = require('gulp-stylus')
+
 gulp.task('estilos',function(){
 	gulp.src('./src/estilos/*.styl')
 		.pipe(stylus())

@@ -1,0 +1,238 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(name="description", content="")
+    meta(name="author", content="")
+    title Festival de colores
+    // Bootstrap core CSS
+    link(href="assets/bootstrap/css/bootstrap.min.css", rel="stylesheet")
+    // Bootstrap theme
+    link(href="assets/bootstrap/css/bootstrap-theme.min.css", rel="stylesheet")
+    // owl carousel css
+    link(href="assets/js/owl-carousel/owl.carousel.css", rel="stylesheet")
+    link(href="assets/js/owl-carousel/owl.theme.css", rel="stylesheet")
+    link(href="assets/js/owl-carousel/owl.transitions.css", rel="stylesheet")
+    // Custom styles for this template
+    link(href="assets/css/styles.css", rel="stylesheet")
+    // HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries
+    //if lt IE 9
+      script(src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js")
+      script(src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js")
+  body
+    .background-image-overlay
+    #outer-background-container(data-default-background-img="assets/images/festival_images/bg0.jpg", style="background-image:url(assets/images/other_images/bg0.jpg);")
+    // end: #outer-background-container
+    // Outer Container
+    #outer-container
+      // Left Sidebar
+      section#left-sidebar
+        .logo
+          a.link-scroll(href="#home")
+            img(src="assets/images/festival_images/nuevo logo.png", alt="")
+        // .logo
+        // Menu Icon for smaller viewports
+        #mobile-menu-icon.visible-xs(onclick="toggle_main_menu();")
+          span.glyphicon.glyphicon-th
+        ul#main-menu
+          li#menu-item-text.menu-item.scroll
+            a(href="#intro") Festival de Colores
+          li#menu-item-carousel.menu-item.scroll
+            a(href="#quienes-somos") Quienes Somos
+          li#menu-item-grid.menu-item.scroll
+            a(href="#un-llamado") Un llamado a...
+          li#menu-item-featured.menu-item.scroll
+            a(href="#faq") FAQ!
+          li#menu-item-contact.menu-item.scroll
+            a(href="#contacto") Contacto
+        // #main-menu
+      // #left-sidebar
+      // end: Left Sidebar
+      section#main-content.clearfix
+        article#home.section-wrapper.clearfix(data-custom-background-img="assets/images/festival_images/bg1.jpg")
+          .content-wrapper.clearfix
+            .col-sm-10.col-md-9.pull-right
+              object(width="700" height="450")
+                param(name="movie" value="https://www.youtube.com/v/OEVV0ogmDdQ")
+                embed(src="https://www.youtube.com/v/OEVV0ogmDdQ" type="application/x-shockwave-flash" width="700" height="450")
+        // .section-wrapper
+        article#intro.section-wrapper.clearfix(data-custom-background-img="assets/images/festival_images/bg0.jpg")
+          .content-wrapper.clearfix
+            .col-sm-10.col-md-9.pull-right
+              h1.section-title Festival de Colores Colombia
+              section.text-content(style="text-align:left;")
+                p
+                  | Festival  de Colores Colombia es  un llamado  a la unidad en todas sus expresiones, es un espacio para abrir la mente y mirar hacia un camino de paz y alegria.
+                p
+                  |Las  manifestaciones  independientes de arte que expresan  sensibilidad,  comparten mensajes que trascienen la normalidad de pensamiento, por esto el Festival  recibe con entusiasmo todas las expresiones artisticas que los jovenes Colombianos quieran  exponer y compartir.
+                p
+                  | Por medio  ideas nuevas tejemos canales de conexion, para asi generar acciones que aportan a un despertar de conciencia y armonia. 
+                p
+                  | Los colores invitan a la diversidad, a la libertad de pensamiento y a recibir miles de oportunidades que la vida tiene para todos nosotros.        
+            // .col-sm-10
+          // .content-wrapper
+        // .section-wrapper
+        article#quienes-somos.section-wrapper.clearfix(data-custom-background-img="assets/images/festival_images/bg2.jpg")
+          .content-wrapper.clearfix
+            .col-sm-10.col-md-9.pull-right
+              h1.section-title
+                label
+                  img(src="assets/images/festival_images/OPEN_REEL.png")
+              section.text-content(style="text-align:left;")
+                p
+                  | Optamos por tomar acciones que desde ya aporten al sueño de un pais que desea vivir en paz y armonia.
+                p
+                  | Nuestro proposito es crear espacios en los cuales cada persona da lo mejor de si, para lograr  un resultado en comun. Creemos en Colombia, nos gusta hacer que las cosas sucedan,  aprovechar las oportunidades y alcanzar las metas.
+                p
+                  | Trabajo en equipo, compromiso y pasion son algunas de las cualidades que representamos por medio de nuestros proyectos. Estamos abiertos al cambio, generando nuevas ideas y recibiendo todo los retos que nos trae el dia a dia.
+        // .section-wrapper
+        article#un-llamado.section-wrapper.clearfix(data-custom-background-img="assets/images/festival_images/bg3.jpg")
+          .content-wrapper.clearfix
+            .col-sm-10.col-md-9.pull-right
+              h1.section-title
+                | Llamando a ...
+              section.text-content(style="text-align:left;")
+                p
+                  | VISIONARIOS MISTICOS CUENTEROS ESTUDIANTES  EXPLORADORES CURIOSOS
+                  | ARTISTAS POETAS INDIGENAS MÚSICOS FOTOGRAFOS  CINEASTAS ADIVINOS
+                  | REBELDES PSICONAUTAS FILÓSOFOS ERUDITOS MOCHILEROS BOHEMIOS 
+                  | SOÑADORES RAPEROS VEGANOS VEGETARIANOS NOMADAS PROFETAS GRAFITEROS  TRASENDENTALISTAS SABIOS  YOGUIS YOGINIS RASTAS TRIBUS AMANTES 
+                  | BAILARINES COCINEROS CAMPISTAS HÉROES AMBIENTALISTAS  CIENTÍFICOS 
+                  | PROFESORES   HIPPIES COUCHSURFERS VIAJEROS  ATLETAS REVOLUCIONARIOS
+                  | Y HABITANTES DE LA TIERRA
+        // .section-wrapper
+        article#faq.section-wrapper.clearfix(data-custom-background-img="assets/images/festival_images/bg4.jpg")
+          .content-wrapper.clearfix
+            .col-sm-10.col-md-9.pull-right
+              h1.section-title
+                | FAQ
+              section.text-content(style="text-align:left;")
+                p
+                  | 1. ¿Donde puedo comprar las entradas?
+                  br
+                  | Proximamante  toda la info en las redes sociales.
+                p
+                  | 2. ¿Donde puedo comprar el polvo de colores?
+                  br
+                  | Durante el festival podras comprar diferentes colores en paquetes. La boleta de entrada incluye unos cuantos.
+                p
+                  | 3. ¿Cual es la edad minima para  participar?
+                  br
+                  | La edad minima para acceder al Festival es  14 años. 
+                p
+                  | 4. ¿Que ropa me pongo?
+                  br
+                  | Recomendamos ropa blanca por la visibilidad de los colores, pero puedes venir como quieras
+                p
+                  | 5. ¿Los colores salen de mi ropa? 
+                  br
+                  | Sí, los colores son lavables y salen de tu ropa.
+                p 
+                  | 6. ¿El polvo es tóxico?
+                  br
+                  | No es tóxico y no contiene elementos dañinos y se elimina facilmente con agua. No es nocivo para piel  y puede ser retirado de cualquier superficie ligeramente. 
+        // .section-wrapper
+        article#contacto.section-wrapper.clearfix(data-custom-background-img="assets/images/festival_images/bg5.jpg")
+          .content-wrapper.clearfix
+            h1.section-title Contacto
+            
+            // CONTACT FORM
+            .col-sm-12.col-md-12
+              // IMPORTANT: change the email address at the top of the assets/php/mail.php file to the email address that you want this form to send to
+              form.form-style.validate-form.clearfix(action="assets/php/mail.php", method="POST", role="form")
+                // form left col
+                .col-md-6
+                  .form-group
+                    input#form-name.text-field.form-control.validate-field.required(type="text", data-validation-type="string", placeholder="Nombre y Apellido", name="name")
+                  .form-group
+                    input#form-email.text-field.form-control.validate-field.required(type="email", data-validation-type="email", placeholder="Correo Electrónico", name="email")         
+                  // CONTACT DETAILS
+                  .contact-details
+                    p
+                      | Bogotá DC. Colombia 
+                    p 
+                      | Tel: (+57) 311 4507780
+                      br
+                      |      (+57) 312 5811301      
+                    p
+                      a(href="#") festivaldecolorescolombia@gmail.com
+                  // END: CONTACT DETAILS
+                // end: form left col  
+                // form right col
+                .col-md-6
+                  .form-group
+                    textarea.form-control.validate-field.required(placeholder="Mensaje...", name="message")
+                  .form-group
+                    img.form-loader(src="assets/images/theme_images/loader-form.GIF")
+                    button.btn.btn-sm.btn-outline-inverse(type="submit") Enviar
+                  .form-group.form-general-error-container
+                // end: form right col
+            // end: CONTACT FORM
+          // .content-wrapper
+        // .section-wrapper
+      // #main-content
+      // Footer
+      section#footer
+        // Go to Top
+        #go-to-top(onclick="scroll_to_top();")
+          span.icon.glyphicon.glyphicon-chevron-up
+        ul.social-icons
+          li
+            a(href="#", target="_blank", title="Facebook")
+              img(src="assets/images/theme_images/social_icons/facebook.png", alt="Facebook")
+          li
+            a(href="#", target="_blank", title="Twitter")
+              img(src="assets/images/theme_images/social_icons/twitter.png", alt="Twitter")
+          li
+            a(href="#", target="_blank", title="youtube")
+              img(src="assets/images/theme_images/social_icons/youtube.png", alt="youtube")
+          li
+            a(href="#", target="_blank", title="instagram")
+              img(src="assets/images/theme_images/social_icons/instagram.png", alt="instagram")
+        // copyright text
+        .footer-text-line &#169; 2014
+      // end: Footer
+    // #outer-container
+    // end: Outer Container
+    // Modal
+    // DO NOT MOVE, EDIT OR REMOVE - this is needed in order for popup content to be populated in it
+    #common-modal.modal.fade(tabindex="-1", role="dialog", aria-hidden="true")
+      .modal-dialog
+        .modal-content
+          button.close(type="button", data-dismiss="modal", aria-hidden="true") &#215;
+          .modal-body
+          // .modal-body
+        // .modal-content
+      // .modal-dialog
+    // .modal
+    //
+       Javascripts
+          ================================================== 
+    // Jquery and Bootstrap JS
+    script(src="https://code.jquery.com/jquery-1.10.2.min.js")
+    script(src="assets/bootstrap/js/bootstrap.min.js")
+    // Easing - for transitions and effects
+    script(src="assets/js/jquery.easing.1.3.js")
+    // background image strech script
+    script(src="assets/js/jquery.backstretch.min.js")
+    //
+       background image fix for IE 9 or less
+             - use same background as set above to <body> 
+    //if lt IE 9
+      script(type="text/javascript")
+        $(document).ready(function(){
+        jQuery("#outer-background-container").backstretch("assets/images/other_images/bg5.jpg");
+        });
+    // detect mobile browsers
+    script(src="assets/js/detectmobilebrowser.js")
+    // owl carousel js
+    script(src="assets/js/owl-carousel/owl.carousel.min.js")
+    // Custom functions for this theme
+    script(src="assets/js/functions.min.js")
+    script(src="assets/js/initialise-functions.js")
+    // IE9 form fields placeholder fix
+    //if lt IE 9
+      script
+        contact_form_IE9_placeholder_fix();

@@ -6,18 +6,19 @@ $(document).ready(function(){
 		/*var pos = $(this).position().top*/
 		/*posicionar el scroll de la pagina en la posicion indicada*/
 		/*$(window).scrollTop(pos)*/
-
 		
 		
-		focoElemento(this,0,900);
+		focoElemento(this,30,900);
 	});
+
+	/*
 	$( "#clickme" ).click(function() {
 	  $( "#book" ).animate({
 	    opacity: 0.25,
 	    left: "+=50",
 	    top:"-=500"
 	  }, 500);
-	});
+	});*/
 });
 
 /*  
